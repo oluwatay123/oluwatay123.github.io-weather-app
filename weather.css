@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: white;
+  height: 16px !important;
+}
+::-webkit-scrollbar-thumb {
+  width: 15px;
+  background-color: rgb(139, 139, 148);
+}
+.card {
+
+  max-width: 490px;
+  border-radius: 50px !important;
+  margin:   100px  auto 0 ;
+  padding: 40px 35px;
+  text-align: center;
+  min-height: 20vh;
+  position: fixed;
+  margin-bottom: 100px !important;
+ transform: translateY(100px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background: transparent !important;
+  border-bottom: 1px solid #999;
+  background: rgba(0, 0, 0, 0.3) !important;
+  border: none !important;
+  overflow-y: hidden !important;
+}
+
+.search {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input {
+  border: 0;
+  outline: 0;
+  background: #333232;
+  padding: 10px 25px;
+  height: 60px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+  color: rgb(240, 198, 198);
+}
+
+.button {
+  border: 0;
+  outline: 0;
+  background: #222121;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.buttonimage {
+  width: 16px;
+}
+.container {
+  margin-top: 50px;
+  display: none;
+}
+
+.weather {
+  margin-top: 30px;
+  display: none;
+}
+
+.weatherimage {
+  width: 190px;
+  margin-top: 50px;
+}
+
+.win {
+  width: 100px;
+}
+.h {
+  width: 100px;
+}
+
+.temp {
+  font-size: 80px;
+  font-weight: 500px;
+  color: rgb(240, 198, 198);
+}
+
+.hu {
+  font-weight: 500px;
+  color: rgb(240, 198, 198);
+}
+
+#f {
+  font-weight: 500px;
+  color: rgb(240, 198, 198);
+}
+.vid {
+  position:fixed;
+  /* object-fit: cover; */
+  /* top: 0; */
+  left: 0;
+  right: 0 ;
+  width: 100%; 
+  /* max-height: 100%; */
+  /* background-position: center; */
+  /* background-size:cover; */
+  /* z-index: -1 !important; */
+
+ 
+ 
+}
+#cards {
+  margin-top: -0.5px !important;
+}
+.humidity {
+  font-weight: 700;
+  color: rgb(240, 198, 198);
+}
+.wind {
+  font-weight: 700;
+  color: rgb(240, 198, 198);
+}
+.city {
+  font-weight: 700;
+  color: rgb(240, 198, 198);
+}
+.error {
+  font-size: 30px;
+  font-weight: 700px;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align: left;
+  display: none;
+}
+.click{
+  background-color: rgba(61, 59, 59, 0.596);
+  cursor: pointer;
+}
+
+
+@media screen and (min-width:400px) {
+
+.vid{
+  height: 100%;
+  object-fit: fill;
+}
+
+}
+
+@media screen and (min-width:300px){
+.vid{
+  height: 100%;
+  object-fit: fill;
+}
+}
+
+
+
+

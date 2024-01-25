@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image" href="images/images/rain.png" />
+    <title>weather app</title>
+    <link rel="stylesheet" href="weather.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="body">
+    <div>
+      <video
+        src="images/images/rainyvideo.mp4"
+        class="vid"
+        id="vido"
+        autoplay
+        muted
+        loop
+      ></video>
+      <div>
+        <!-- <button class="click" onclick="='https://www.google.com'"></button> -->
+      </div>
+    </div>
+
+    <div class="card" id="cards">
+      <div class="search">
+        <input
+          type="text"
+          class="input"
+          placeholder="enter city name"
+          spellcheck="false"
+        />
+        <button class="button">
+          <img class="buttonimage" src="images/images/search.png"/>
+        </button>
+      </div>
+      <div class="error">
+        <p>invalid city</p>
+      </div>
+      <div class="weather">
+        <img class="weatherimage" id="rain" src="images/images/raining.png" />
+        <h1 class="temp">22°C</h1>
+        <h2 class="city">New York</h2>
+        <div>
+          <div class="detail">
+            <div>
+              <div class="col"></div>
+              <div class="col"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container contain">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="col">
+              <img class="h" src="images/images/humidit.png" />
+              <div>
+                <p class="humidity">50%</p>
+                <h2 class="hu">humidity</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="win" src="images/images/winding.png" />
+            <div>
+              <p class="wind">15Km/h</p>
+              <h2 id="f">Wind speed</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+  <div>
+    <video
+      src="./images/images/cloud_video.mp4"
+      alt="..."
+      loading="lazy"
+      hidden="true"
+    ></video>
+  </div>
+</html>
